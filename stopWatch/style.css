@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(to bottom right,rgb(29, 29, 243),rgb(118, 163, 245));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.container
+{
+    background-color: rgb(228, 221, 221);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(00, 00, 00, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+
+
+}
+.title
+{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+.stopwatch
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.timer
+{
+    font-size: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(00, 00, 00, .2);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+.timer span
+{
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+}
+.controls
+{
+    display: flex;
+    gap: 1rem;
+}
+button
+{
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    background-color:rgb(87, 143, 248);
+    color: white;
+    border: none;
+    border-radius: 8px ;
+    cursor: pointer;
+    transition: background-color 0.3 ease-in-out;
+}
+button:hover
+{
+    background-color:rgb(23, 23, 139) ;
+}
+.lap-title
+{
+    font-size: 1.5rem;
+}
+.laps
+{
+    width: 100%;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(00, 00, 00, .2);
+}
+li
+{
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+li:last-child
+{
+    border-bottom: none;
+}
+li span
+{
+    font-weight: 700px;
+}
