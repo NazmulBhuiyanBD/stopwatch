@@ -46,8 +46,7 @@ function resetTimer(){
     clearInterval(interval);
     resetTimerData();
     startButton.disabled = false;
-    // const listItem = document.getElementById('laplist');
-    // listItem.remove();
+    lapList.innerHTML='';
 
 }
 
